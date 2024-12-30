@@ -4,6 +4,7 @@ a2 p4.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Calculating the areas of different shapes
 #include <stdio.h>
 
 int main() {
