@@ -4,6 +4,7 @@ a2 p3.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Converting days weeks and hours into only hours
 #include <stdio.h>
 
 int main()
