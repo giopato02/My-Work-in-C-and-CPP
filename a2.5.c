@@ -4,6 +4,7 @@ a2 p5.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Modifying a variable by a pointer
 #include <stdio.h>
 
 int main() {
