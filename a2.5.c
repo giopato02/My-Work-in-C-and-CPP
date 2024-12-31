@@ -22,3 +22,24 @@ int main() {
    
     return 0;
 }
+
+/*
+Second way to solve this problem:
+#include <stdio.h>
+
+int main()
+{
+    int a;
+
+    scanf("%d", &a);
+    printf("%d\n", a);
+
+    int *ptr_a = &a;
+    printf("%d\n", ptr_a);
+    *ptr_a += 5;
+
+    printf("%d", a);
+
+    return 0;
+}
+*/
