@@ -27,3 +27,27 @@ int main()
 
     return 0;
 }
+
+/*
+//Second Way
+#include <stdio.h>
+
+int main()
+{
+    double x, y;
+
+    scanf("%lf", &x);
+    scanf("%lf", &y);
+
+    double *ptr_one = &x;
+    double *ptr_two = &x;
+    double *ptr_three = &y;
+
+    printf("pointer 1: %p\n", ptr_one);
+    printf("pointer 2: %p\n", ptr_two);
+    printf("pointer 3: %p\n", ptr_three);
+
+
+    return 0;
+}
+*/
