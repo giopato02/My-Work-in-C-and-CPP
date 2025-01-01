@@ -4,6 +4,7 @@ a2 p6.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Pointers and addresses
 #include <stdio.h>
 
 int main()
