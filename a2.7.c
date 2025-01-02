@@ -4,6 +4,7 @@ a2 p7.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Correcting a code with an issue
 #include <stdio.h>
 int main(){
     int i = 8;
