@@ -13,3 +13,7 @@ int main(){
     printf("That's it.\n");
 return 0;
 }
+/*
+Second way to solve this problem
+
+*/
