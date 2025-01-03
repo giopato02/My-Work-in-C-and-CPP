@@ -19,7 +19,9 @@ int main(){
     
 return 0;
 }
+
 /*
+Second Solution
 #include <stdio.h>
 
 int main()
