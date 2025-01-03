@@ -4,6 +4,7 @@ a2 p8.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Check if the number is divisible by 2 and 7
 #include <stdio.h>
 int main(){
     int Num;
