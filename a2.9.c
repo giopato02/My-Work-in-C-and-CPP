@@ -4,6 +4,7 @@ a2 p9.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Check if the inputted character is a letter or some other symbol
 #include <stdio.h>
 
 int main() {
@@ -25,6 +26,7 @@ int main() {
     return 0;
 }
 /*
+second way to solve the problem
 #include <stdio.h>
 
 int main()
