@@ -24,3 +24,22 @@ int main() {
 
     return 0;
 }
+/*
+#include <stdio.h>
+
+int main()
+{
+    char y;
+
+    scanf("%c", y);
+
+    if(y > 10){
+        printf("%c is a character", y);
+    }
+    else{
+        printf("%c is some other symbol", y)
+    }
+
+    return 0;
+}
+*/
