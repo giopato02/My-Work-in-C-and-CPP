@@ -30,3 +30,24 @@ int main()
     
     return 0;
 }
+/*
+#include <stdio.h>
+
+int main()
+{
+    int n;
+
+    // Keep asking for input until a valid (positive, non-zero) value is entered
+    do {
+        printf("Enter a positive, non-zero integer: ");
+        scanf("%d", &n);
+    } while (n <= 0);
+
+    // Print the conversion table
+    for (int i = 1; i <= n; i++) {
+        printf("%d day%s = %d hours\n", i, (i == 1) ? "" : "s", i * 24);
+    }
+
+    return 0;
+}
+*/
