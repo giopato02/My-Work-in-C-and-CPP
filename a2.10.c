@@ -4,6 +4,7 @@ a2 p10.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//converting num of days and hours into just hours
 #include <stdio.h>
 
 int main()
@@ -31,6 +32,7 @@ int main()
     return 0;
 }
 /*
+Second Solution
 #include <stdio.h>
 
 int main()
