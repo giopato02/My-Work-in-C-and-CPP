@@ -4,6 +4,7 @@
 // Giorgi Pataridze
 // gpataridze@constructor.university
 // */
+// Print variable x for n times while n is more than or equal to 0
 // #include <stdio.h>
 
 // int main() {
