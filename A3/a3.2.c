@@ -4,6 +4,7 @@ a3 p2.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// print ch-n, n times
 // #include <stdio.h>
 
 // int main()
@@ -26,8 +27,8 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
-//Second way to solve the problem
 
+//Second way to solve the problem
 #include <stdio.h>
 
 int main()
