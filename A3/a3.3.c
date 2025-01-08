@@ -4,6 +4,7 @@ a3 p3.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Converting cm to km with a function
 // #include <stdio.h>
 
 // // Function that converts cm to km
@@ -26,7 +27,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
-
+//Second way to solve this problem
 #include <stdio.h>
 
 float convert(int cm)
