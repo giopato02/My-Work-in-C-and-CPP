@@ -25,3 +25,24 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
+
+
+#include <stdio.h>
+
+float convert(int cm)
+{
+    float km = cm;
+    return km / 100000;
+}
+
+int main()
+{
+    int cm;
+    float km;
+    scanf("%d", &cm);
+
+    km = convert(cm);
+    printf("%f", km);
+
+    return 0;
+}
