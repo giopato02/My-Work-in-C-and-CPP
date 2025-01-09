@@ -4,6 +4,7 @@ a3 p4.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Fix the Code
 // #include <stdio.h>
 
 // int position(char str[], char c)
@@ -30,7 +31,7 @@ gpataridze@constructor.university
 //     }
 // }
 
-
+//second way to solve the problem
 #include <stdio.h>
 
 int position(char str[], char c)
