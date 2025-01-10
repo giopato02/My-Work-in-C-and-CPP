@@ -4,6 +4,7 @@
 // Giorgi Pataridze
 // gpataridze@constructor.university
 // */
+// Using a switch function to ouput sum, list, converted list to farenheit and arithmetic mean
 // #include <stdio.h>
 
 // // Function for calculating the sum of temps
@@ -80,6 +81,7 @@
 //     return 0;
 // }
 
+//Second way to solve the problem 
 #include <stdio.h>
 #include <string.h>
 
