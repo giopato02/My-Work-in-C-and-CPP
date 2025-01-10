@@ -79,3 +79,69 @@
 
 //     return 0;
 // }
+
+#include <stdio.h>
+#include <string.h>
+
+double Sum(double temp[], int a)
+{
+    double sum;
+
+    for(int i = 0; i < a; i++)
+    {
+        sum += temp[i];
+    }
+    return sum;
+}
+void List(double temp[], int a)
+{
+    for(int i = 0; i < a; i++)
+    {
+        printf("%lf", temp[i]);
+    }
+}
+void Convert(double temp[], int a)
+{
+    for(int i = 0; i < a; i++)
+    {
+        printf("%lf", temp[i] * (9.0/5.0) + 32);
+    }
+}
+
+int main()
+{
+    char c;
+    int n;
+    double temp[100];
+
+    printf("Enter a character: ");
+    scanf("%c", &c);
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    printf("Enter %d temperatures:\n", n);
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%lf", &temp[i]);
+    }
+
+    switch (c)
+    {
+    case 's':
+        printf("Sum of all temps: %lf\n", Sum(temp, n));
+        break;
+    case 'p':
+        printf("List of all temps: ");
+        List(temp, n);
+        break;
+    case 't':
+        printf("List of all temps in Fahrenheit: ");
+        Convert(temp, n);
+        break;
+    default:
+        printf("Arithmetic mean of all temps: %lf", Sum(temp, n) / n);
+        break;
+    }
+
+    return 0;
+}
