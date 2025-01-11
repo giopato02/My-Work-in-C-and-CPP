@@ -4,6 +4,8 @@ a3 p6.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+//Convert kg to pounds
+
 // #include <stdio.h>
 
 // float to_pounds(int kg, int g)
@@ -23,6 +25,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
+//Second Solution
 #include <stdio.h>
 
 float to_pounds(int kg, int g)
