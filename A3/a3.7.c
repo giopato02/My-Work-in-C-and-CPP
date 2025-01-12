@@ -40,6 +40,7 @@
 
 //     return 0;
 // }
+// Second way to solve the problem
 
 #include <stdio.h>
 
