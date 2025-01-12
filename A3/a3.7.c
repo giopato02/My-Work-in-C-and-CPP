@@ -40,3 +40,24 @@
 
 //     return 0;
 // }
+
+#include <stdio.h>
+
+int main()
+{
+    int n, m;
+    char c;
+    scanf("%d", &n);
+    scanf("%d", &m);
+    scanf(" %c", &c);
+
+    for(int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < m+i; j++)
+        {
+            printf("%c", c);
+        }
+        printf("\n");
+    }
+    return 0;
+}
