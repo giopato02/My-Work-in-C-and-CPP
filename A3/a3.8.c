@@ -4,6 +4,7 @@
 // Giorgi Pataridze
 // gpataridze@constructor.university
 // */
+// // Computing sum and average
 // #include <stdio.h>
 
 // // Function calculating the sum of numbers
@@ -58,7 +59,7 @@
 //     return 0;
 // }
 
-
+// Second way to solve the problem
 #include <stdio.h>
 
 float sum(float arr[], int a)
