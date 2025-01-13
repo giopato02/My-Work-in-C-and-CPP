@@ -57,3 +57,42 @@
 
 //     return 0;
 // }
+
+
+#include <stdio.h>
+
+float sum(float arr[], int a)
+{
+    float sum = 0.0;
+    for(int i = 0; i < a; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
+float average(float arr[], int n)
+{
+    //float mean = sum(arr, n) / n;
+    return sum(arr, n) / n;
+}
+
+int main()
+{
+    float arr[10];
+    int count = 0;
+
+    for(int i = 0; i < 10; i++)
+    {
+        scanf("%f", &arr[i]);
+        
+        if(arr[i] == -99.0)
+        {
+            break;
+        }
+        count++;
+    }
+    printf("The sum of floats: %f\n", sum(arr, count));
+    printf("The average of floats: %f\n", average(arr, count));
+
+    return 0;
+}
