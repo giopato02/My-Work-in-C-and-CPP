@@ -51,3 +51,50 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
+
+
+#include <stdio.h>
+
+double sum25(double v[], int n)
+{
+    if(n < 6)
+    {
+        return -111;
+    }
+    double sum;
+    for (int i = 0; i < n; i++)
+    {
+        sum = v[2] + v[5];
+    }
+    return sum;
+}
+
+int main()
+{
+    int n;
+    double arr[20];
+
+    scanf("%d", &n);
+
+    if(n < 1 || n > 20)
+    {
+        printf("Error, invalid integer entered.");
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%lf", &arr[i]);
+    }
+
+    int result = sum25(arr, n);
+    if (result = -111)
+    {
+        printf("Error, positions 2 or 5 are not within v[].\n");
+    }
+    else
+    {
+        printf("Sum=%lf\n", sum25(arr, n));
+    }
+
+    return 0;
+}
