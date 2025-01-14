@@ -4,6 +4,7 @@ a3 p9.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Sum of Positions 2 and 5
 // #include <stdio.h>
 
 // double sum25(double v[], int n)
@@ -52,12 +53,12 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
-
+// Second way to solve the problem
 #include <stdio.h>
 
 double sum25(double v[], int n)
 {
-    if(n < 6)
+    if (n < 6)
     {
         return -111;
     }
@@ -76,7 +77,7 @@ int main()
 
     scanf("%d", &n);
 
-    if(n < 1 || n > 20)
+    if (n < 1 || n > 20)
     {
         printf("Error, invalid integer entered.");
     }
