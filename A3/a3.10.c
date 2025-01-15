@@ -50,3 +50,39 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
+
+#include <stdio.h>
+
+float product(float a, float b)
+{
+    return a * b;
+}
+void prodbyref(float a, float b, float *p)
+{
+    *p = product(a, b);
+}
+void modifybyref(float *a, float *b)
+{
+    *a += 3;
+    *b += 11;
+}
+
+int main()
+{
+    float one, two;
+    float ptr;
+
+    scanf("%f", &one);
+    scanf("%f", &two);
+
+    float result1 = product(one, two);
+    printf("Product: %f\n", result1);
+
+    prodbyref(one, two, &ptr);
+    printf("Product by reference: %f\n", ptr);
+
+    modifybyref(&one, &two);
+    printf("Modify by reference: %f, %f\n", one, two);
+
+    return 0;
+}
