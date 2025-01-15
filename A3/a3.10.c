@@ -4,6 +4,7 @@ a3 p10.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Modifying by reference
 // #include <stdio.h>
 
 // // Function for product of a and b
@@ -51,6 +52,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
+// Second Solution
 #include <stdio.h>
 
 float product(float a, float b)
