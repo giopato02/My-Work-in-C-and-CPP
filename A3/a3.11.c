@@ -1,0 +1,76 @@
+// /*
+// CH-230-A
+// a3 p11.[c]
+// Giorgi Pataridze
+// gpataridze@constructor.university
+// */
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+//     char one[99];
+//     char two[99];
+//     char three[99]; // Third string to copy `two` into
+//     char c;         // Character to search for in `two`
+//     char *pos;      // Pointer to store the position of the found character
+
+//     // Read both strings from the keyboard
+//     printf("Enter the first string: ");
+//     fgets(one, sizeof(one), stdin);
+
+//     printf("Enter the second string: ");
+//     fgets(two, sizeof(two), stdin);
+
+//     // Remove the trailing newline character from both strings if present
+//     one[strcspn(one, "\n")] = '\0';
+//     two[strcspn(two, "\n")] = '\0';
+
+//     // 1. Print the lengths of both strings
+//     printf("Length1=%lu\n", strlen(one));
+//     printf("Length2=%lu\n", strlen(two));
+
+//     // 2. Concatenate one with two and print the result
+//     char concatenated[198];    // Array to store the concatenated result
+//     strcpy(concatenated, one); // Copy 'one' into concatenated
+//     strcat(concatenated, two); // Concatenate 'two' to 'one'
+//     printf("Concatenation=%s\n", concatenated);
+
+//     // 3. Copy string 'two' into string 'three' and print 'three'
+//     strcpy(three, two);
+//     printf("copy= %s\n", three);
+
+//     // 4. Compare the two strings and print a corresponding message
+//     int comparison = strcmp(one, two);
+//     if (comparison > 0)
+//     {
+//         printf("two is smaller than one\n");
+//     }
+//     else if (comparison < 0)
+//     {
+//         printf("one is smaller than two\n");
+//     }
+//     else
+//     {
+//         printf("one and two are equal\n");
+//     }
+
+//     // 5. Search for a character in 'two'
+//     printf("Enter a character to search for in the second string: ");
+//     scanf(" %c", &c); // Read the character
+
+//     // Find the first occurrence of the character in 'two'
+//     pos = strchr(two, c);
+//     if (pos != NULL)
+//     {
+//         // Calculate the position index
+//         int index = (int)(pos - two);
+//         printf("position=%d\n", index);
+//     }
+//     else
+//     {
+//         printf("The character '%c' is not found in the second string.\n", c);
+//     }
+
+//     return 0;
+// }
