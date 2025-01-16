@@ -4,6 +4,8 @@
 // Giorgi Pataridze
 // gpataridze@constructor.university
 // */
+// String Functions
+
 // #include <stdio.h>
 // #include <string.h>
 
@@ -75,6 +77,7 @@
 //     return 0;
 // }
 
+// Second solution
 #include <stdio.h>
 #include <string.h>
 
