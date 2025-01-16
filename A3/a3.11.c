@@ -74,3 +74,66 @@
 
 //     return 0;
 // }
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str1[100];
+    char str2[100];
+    char concat[200];
+    char str3[100];
+    char c;
+
+    fgets(str1, sizeof(str1), stdin);
+    fgets(str2, sizeof(str2), stdin);
+
+    str1[strcspn(str1, "\n")] = '\0';
+    str2[strcspn(str2, "\n")] = '\0';
+
+    size_t length1 = strlen(str1);
+    size_t length2 = strlen(str2);
+
+    printf("%d\n", length1);
+    printf("%d\n", length2);
+
+    strcpy(concat, str1);
+    strcat(concat, str2);
+    printf("%s\n", concat);
+
+    strcpy(str3, str2);
+    printf("%s\n", str3);
+
+    int compare = strcmp(str2, str1);
+    if (str2 > str1)
+    {
+        printf("The second string is larger than the first one.\n");
+    }
+    else if (str2 < str1)
+    {
+        printf("The second string is smaller than the first one.\n");
+    }
+    else
+    {
+        printf("The second string is equal to the first one.\n");
+    }
+
+    scanf("%c", &c);
+    int count;
+    for (int i = 0; i < length2; i++)
+    {
+        if(i == NULL)
+        {
+            printf("ERROR");
+        }
+        if (c == str2[i])
+        {
+            printf("The character %c is found in position %d in %s\n", c, i, str2);
+            break;
+        }
+
+    }
+
+    return 0;
+}
