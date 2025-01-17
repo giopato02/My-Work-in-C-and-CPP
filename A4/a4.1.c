@@ -4,6 +4,7 @@ a4 p1.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Drawing a Trapezoid and calculating the area and perimeter
 // #include <stdio.h>
 // #include <math.h>
 
@@ -31,7 +32,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
-
+// Second Solution
 #include <stdio.h>
 #include <math.h>
 
