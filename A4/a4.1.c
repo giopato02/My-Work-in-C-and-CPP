@@ -30,3 +30,29 @@ gpataridze@constructor.university
 //     }
 //     return 0;
 // }
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float lower, upper, step_size;
+    double area, perimeter;
+
+    printf("Enter lower limit: ");
+    scanf("%f", &lower);
+    printf("Enter upper limit: ");
+    scanf("%f", &upper);
+    printf("Enter step size: ");
+    scanf("%f", &step_size);
+
+    for(float x = lower; x <= upper; x += step_size)
+    {
+        area = M_PI * (x*x);
+        perimeter = 2 * M_PI * x;
+        printf("%f %lf %lf\n", x, area, perimeter);
+    }
+
+    return 0;
+}
