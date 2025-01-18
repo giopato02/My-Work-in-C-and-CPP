@@ -4,6 +4,7 @@ a4 p2.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Scatter the String
 // #include <stdio.h>
 
 // int main()
@@ -25,6 +26,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
+// Second Solution
 #include <stdio.h>
 #include <string.h>
 
