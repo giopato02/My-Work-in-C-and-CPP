@@ -4,6 +4,7 @@ a4 p3.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Switch Statement
 // #include <stdio.h>
 // #include <math.h>
 
@@ -91,6 +92,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
+// Second solution
 #include <stdio.h>
 #include <math.h>
 
