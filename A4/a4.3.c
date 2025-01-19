@@ -90,3 +90,90 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
+
+#include <stdio.h>
+#include <math.h>
+
+float geometric_mean(float arr[], int num)
+{
+    float product = 1.0;
+    float sqrt1;
+    for(int i = 0; i < num; i++)
+    {
+        product *= arr[i];
+    }
+    float nth_root = pow(product, 1.0 / num);
+
+    return nth_root;
+}
+float highest_num(float arr[], int n)
+{
+    float temp = arr[0];
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] > temp)
+        {
+            temp = arr[i];
+        }
+    }
+    return temp;
+}
+float smallest(float arr[], int a)
+{
+    float temp = arr[0];
+    for(int i = 0; i < a; i++)
+    {
+        if(arr[i] < temp)
+        {
+            temp = arr[i];
+        }
+    }
+    return temp;
+}
+float sum(float arr[], int a)
+{
+    float sum;
+    for(int i = 0; i < a; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+int main()
+{
+    float arr[15];
+    char c;
+    int n = 0;
+    
+    for (int i = 0; i < 15; i++)
+    {
+        scanf("%f", &arr[i]);
+        if(arr[i] < 0.0)
+        {
+            break;
+        }
+        n++;
+    }
+
+    printf("Enter a char: ");
+    scanf(" %c", &c);
+
+    switch (c)
+    {
+    case 'm':
+        printf("The geometric mean of the elements in the array: %f", geometric_mean(arr, n));
+        break;
+    case 'h':
+        printf("The highest element in the array: %f", highest_num(arr, n));
+        break;
+    case 'l':
+        printf("The smallest element in the array: %f", smallest(arr, n));
+        break;
+    case 's':
+        printf("Sum of the elements in the array: %f", sum(arr, n));
+        break;
+    }
+
+    return 0;
+}
