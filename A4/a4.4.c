@@ -4,6 +4,7 @@ a4 p4.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// count consonants in a string
 #include <stdio.h>
 
 // Function counting consonants
