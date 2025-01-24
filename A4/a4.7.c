@@ -61,3 +61,55 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
+
+#include <stdio.h>
+#define MAX 30
+
+void Under_Diagonal(int matrix[MAX][MAX], int a)
+{
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void Matrix(int matrix[MAX][MAX], int a)
+{
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < a; j++)
+        {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int n;
+    int matrix[MAX][MAX];
+
+    printf("enter size of matrix: ");
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("Enter an integer for position [%d][%d]: ", i, j);
+            scanf(" %d", &matrix[i][j]);
+        }
+    }
+
+    printf("The entered matrix is:\n");
+    Matrix(matrix, n);
+    printf("Under the main diagonal:");
+    Under_Diagonal(matrix, n);
+
+    return 0;
+}
