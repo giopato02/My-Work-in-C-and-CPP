@@ -4,6 +4,7 @@ a4 p7.[c]
 Giorgi Pataridze
 gpataridze@constructor.university
 */
+// Matrix in code
 // #include <stdio.h>
 
 // #define MAX_SIZE 30
@@ -62,6 +63,7 @@ gpataridze@constructor.university
 //     return 0;
 // }
 
+// Second solution
 #include <stdio.h>
 #define MAX 30
 
