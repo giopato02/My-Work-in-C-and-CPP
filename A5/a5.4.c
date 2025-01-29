@@ -59,3 +59,45 @@ gpataridze@constructor.university
 
 //     return 0;
 // }
+
+//Second Solution
+#include <stdio.h>
+#include <stdlib.h>
+
+void divby5(float arr[], int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        arr[i] = arr[i] / 5.0;
+    }
+}   
+
+int main()
+{
+    int n;
+
+    scanf("%d", &n);
+    float *arr = (float *)malloc(n * sizeof(float));
+
+    
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%f", &arr[i]);
+    }
+    printf("Before:\n");
+    for(int i = 0; i < n; i++)
+    {
+        printf("%.3f ", arr[i]);
+    }
+    printf("\n");
+
+    divby5(arr, n);
+    printf("After:\n");
+    for(int i = 0; i < n; i++)
+    {
+        printf("%.3f ", arr[i]);
+    }
+
+    free(arr);
+    return 0;
+}
